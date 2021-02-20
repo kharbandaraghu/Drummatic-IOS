@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +10,149 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="drummatic" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Trd-LR-Vap">
+                                <rect key="frame" x="44" y="0.0" width="808" height="393"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WQJ-53-k12">
+                                        <rect key="frame" x="0.0" y="10" width="808" height="373"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="rQZ-HZ-Dj1">
+                                                <rect key="frame" x="0.0" y="0.0" width="808" height="182.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hq-WA-GXJ">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="Snare">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="70j-eq-lfp"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gDc-4e-36M"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t1d-4h-vQv">
+                                                        <rect key="frame" x="208" y="0.0" width="184.5" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="D1">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="Q9n-qD-VyS"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="twR-ji-haj"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aA5-gX-3KM">
+                                                        <rect key="frame" x="415.5" y="0.0" width="185" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="D2">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="Brr-uV-Ekx"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wtl-Rv-Aeh"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U3d-kw-C6Z">
+                                                        <rect key="frame" x="623.5" y="0.0" width="184.5" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="HHat">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="PjR-s0-lhy"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LFE-ct-NoQ"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="6YF-Fr-oil">
+                                                <rect key="frame" x="0.0" y="190.5" width="808" height="182.5"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6P-76-OzC">
+                                                        <rect key="frame" x="0.0" y="0.0" width="185" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="Cymbal">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="HMt-cy-wjY"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="dNR-sc-549"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5eQ-tt-8fx">
+                                                        <rect key="frame" x="208" y="0.0" width="184.5" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="D3">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="Xnu-Qb-yK9"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="enp-cn-CRO"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oMa-Fp-hx4">
+                                                        <rect key="frame" x="415.5" y="0.0" width="185" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="D4">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="jQ7-4W-FcD"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kc0-nI-7PI"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="22P-IO-fZZ">
+                                                        <rect key="frame" x="623.5" y="0.0" width="184.5" height="182.5"/>
+                                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                                        <state key="normal" title="Kick">
+                                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        </state>
+                                                        <connections>
+                                                            <action selector="bIn:" destination="BYZ-38-t0r" eventType="touchDown" id="HNP-T2-NfF"/>
+                                                            <action selector="bpress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="1xx-mU-2wy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="WQJ-53-k12" firstAttribute="top" secondItem="Trd-LR-Vap" secondAttribute="top" constant="10" id="2Am-th-2gD"/>
+                                    <constraint firstAttribute="trailing" secondItem="WQJ-53-k12" secondAttribute="trailing" id="YZU-c1-A2i"/>
+                                    <constraint firstAttribute="bottom" secondItem="WQJ-53-k12" secondAttribute="bottom" constant="10" id="oRl-1v-7uY"/>
+                                    <constraint firstItem="WQJ-53-k12" firstAttribute="leading" secondItem="Trd-LR-Vap" secondAttribute="leading" id="ujA-JA-J4g"/>
+                                </constraints>
+                            </view>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Trd-LR-Vap" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="3cc-jM-pNM"/>
+                            <constraint firstItem="Trd-LR-Vap" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Si6-SF-W42"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Trd-LR-Vap" secondAttribute="bottom" id="fQo-ox-IcD"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Trd-LR-Vap" secondAttribute="trailing" id="lXJ-Z4-Goh"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outletCollection property="beatButton" destination="6hq-WA-GXJ" collectionClass="NSMutableArray" id="lyy-cO-4gr"/>
+                        <outletCollection property="beatButton" destination="t1d-4h-vQv" collectionClass="NSMutableArray" id="LtE-9e-Pe6"/>
+                        <outletCollection property="beatButton" destination="aA5-gX-3KM" collectionClass="NSMutableArray" id="D4p-NH-NrN"/>
+                        <outletCollection property="beatButton" destination="U3d-kw-C6Z" collectionClass="NSMutableArray" id="vxx-pJ-3AX"/>
+                        <outletCollection property="beatButton" destination="e6P-76-OzC" collectionClass="NSMutableArray" id="maf-hn-ff2"/>
+                        <outletCollection property="beatButton" destination="5eQ-tt-8fx" collectionClass="NSMutableArray" id="OB2-SJ-6Eu"/>
+                        <outletCollection property="beatButton" destination="oMa-Fp-hx4" collectionClass="NSMutableArray" id="W94-IY-cIB"/>
+                        <outletCollection property="beatButton" destination="22P-IO-fZZ" collectionClass="NSMutableArray" id="VT1-MT-r1L"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="20" y="94"/>
         </scene>
     </scenes>
 </document>

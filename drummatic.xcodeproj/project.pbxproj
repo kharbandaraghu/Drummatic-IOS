@@ -12,10 +12,11 @@
 		EAC6FBC6259D968F00D2B7E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6FBC5259D968F00D2B7E4 /* ViewController.swift */; };
 		EAC6FBC9259D968F00D2B7E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC6FBC7259D968F00D2B7E4 /* Main.storyboard */; };
 		EAC6FBCC259D968F00D2B7E4 /* drummatic.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EAC6FBCA259D968F00D2B7E4 /* drummatic.xcdatamodeld */; };
-		EAC6FBCE259D969000D2B7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC6FBCD259D969000D2B7E4 /* Assets.xcassets */; };
 		EAC6FBD1259D969000D2B7E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EAC6FBCF259D969000D2B7E4 /* LaunchScreen.storyboard */; };
 		EAC6FBDC259D969000D2B7E4 /* drummaticTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6FBDB259D969000D2B7E4 /* drummaticTests.swift */; };
 		EAC6FBE7259D969000D2B7E4 /* drummaticUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAC6FBE6259D969000D2B7E4 /* drummaticUITests.swift */; };
+		EAC6FC19259DA8B300D2B7E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAC6FC18259DA8B300D2B7E4 /* Assets.xcassets */; };
+		EAC6FC1E259DA8EC00D2B7E4 /* sounds in Resources */ = {isa = PBXBuildFile; fileRef = EAC6FC1D259DA8EC00D2B7E4 /* sounds */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,7 +43,6 @@
 		EAC6FBC5259D968F00D2B7E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EAC6FBC8259D968F00D2B7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EAC6FBCB259D968F00D2B7E4 /* drummatic.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = drummatic.xcdatamodel; sourceTree = "<group>"; };
-		EAC6FBCD259D969000D2B7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EAC6FBD0259D969000D2B7E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EAC6FBD2259D969000D2B7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EAC6FBD7259D969000D2B7E4 /* drummaticTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drummaticTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -51,6 +51,8 @@
 		EAC6FBE2259D969000D2B7E4 /* drummaticUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = drummaticUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAC6FBE6259D969000D2B7E4 /* drummaticUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = drummaticUITests.swift; sourceTree = "<group>"; };
 		EAC6FBE8259D969000D2B7E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EAC6FC18259DA8B300D2B7E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EAC6FC1D259DA8EC00D2B7E4 /* sounds */ = {isa = PBXFileReference; lastKnownFileType = folder; path = sounds; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 				EAC6FBC3259D968F00D2B7E4 /* SceneDelegate.swift */,
 				EAC6FBC5259D968F00D2B7E4 /* ViewController.swift */,
 				EAC6FBC7259D968F00D2B7E4 /* Main.storyboard */,
-				EAC6FBCD259D969000D2B7E4 /* Assets.xcassets */,
+				EAC6FC18259DA8B300D2B7E4 /* Assets.xcassets */,
+				EAC6FC1D259DA8EC00D2B7E4 /* sounds */,
 				EAC6FBCF259D969000D2B7E4 /* LaunchScreen.storyboard */,
 				EAC6FBD2259D969000D2B7E4 /* Info.plist */,
 				EAC6FBCA259D968F00D2B7E4 /* drummatic.xcdatamodeld */,
@@ -235,7 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAC6FBD1259D969000D2B7E4 /* LaunchScreen.storyboard in Resources */,
-				EAC6FBCE259D969000D2B7E4 /* Assets.xcassets in Resources */,
+				EAC6FC19259DA8B300D2B7E4 /* Assets.xcassets in Resources */,
+				EAC6FC1E259DA8EC00D2B7E4 /* sounds in Resources */,
 				EAC6FBC9259D968F00D2B7E4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -443,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVB3XF796Z;
 				INFOPLIST_FILE = drummatic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -462,6 +467,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DVB3XF796Z;
 				INFOPLIST_FILE = drummatic/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
